@@ -1,4 +1,275 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Ubuntu, Roboto Mono, Poppins, Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(53, 53, 53);
+    font-family: 'roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    width: 10px;
+    background-color: rgba(37, 37, 37, 0);
+}
+
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+:root {
+    --primary-color: #404040;
+    --secondry-color: #FCEC20;
+    --tertiary-color: #ababab42;
+    --shadow-element: 3px 3px 25px rgb(24, 24, 24);
+
+}
+
+/* Navbar selection */
+
+nav {
+    /* background-color: rgb(255, 5, 5); */
+    background-color: var(--tertiary-color);
+    backdrop-filter: blur(1px);
+    box-shadow: var(--shadow-element);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 162px;
+    width: 70vw;
+    height: 7vh;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 1vh;
+    left: 15vw;
+    z-index: 100;
+
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: var(--secondry-color);
+    position: relative;
+    top: 0.4rem
+}
+
+/* Landing Section slection  */
+
+.landing-sect {
+    /* background-color: greenyellow; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hero-txt {
+    background-color: rgb(55, 55, 55);
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    top: 15vh;
+    left: 10vw;
+    border-radius: 20px;
+    box-shadow: var(--shadow-element);
+    color: white;
+}
+
+.margin-setup-landing {
+    margin: 30px 10px 30px 20px;
+}
+
+
+
+.margin-setup-landing>h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'roboto mono',sans-serif;
+}
+
+.margin-setup-landing>p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 3rem;
+    left: 0rem;
+    width: 34rem;
+}
+
+
+.cta button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    color: black;
+    background-color: var(--secondry-color);
+    outline: none;
+    border: none;
+    box-shadow: var(--shadow-element);
+    position: relative;
+    left: -3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.cta > button > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: larger;
+    font-family: poppins;
+}
+
+.cta>div {
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-social {
+    width: 35px;
+    margin: 0px 20px 0px 20px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.hero-img {
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    top: 15vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img>img {
+    border-radius: 10px;
+    width: 313px;
+    box-shadow: var(--shadow-element);
+}
+
+
+
+/* ABOUT PAGE CSS APPLY CODE */
+
+.about {
+    width: 100vw;
+    height: 100vh;
+}
+
+.abt-me {
+    background-color: var(--primary-color);
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: var(--shadow-element);
+    position: relative;
+    top: 5rem;
+    left: 12rem;
+}
+
+.abt-me>h1 {
+    background-color: var(--tertiary-color);
+    display: inline-block;
+    padding: 5px;
+    box-shadow: var(--shadow-element);
+    border-radius: 5px;
+    margin: 20px 0px 0px 30px;
+    color: white;
+    font-size: 35px;
+}
+
+.abt-me>p {
+    background-color: var(--tertiary-color);
+    display: block;
+    padding: 5px;
+    box-shadow: var(--shadow-element);
+    border-radius: 5px;
+    width: 55rem;
+    height: 20rem;
+    margin: 20px 0px 0px 30px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+/* FOOTER CSS CODE  */
+
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>p {
+    color: white;
+    font-size: 20px;
+}
+
+.social-handler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo {
+    width: 35px;
+    border-radius: 5px;
+    display: block;
+}
+
+.logo-txt {
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 70px 0px;
+
 }
